@@ -25,14 +25,14 @@ function Products() {
 
   return (
     <div className="container mx-auto mt-[50px]">
-      <h2 className="text-center text-3xl font-bold mb-[20px]">Products</h2>
+      <h2 className="text-left text-3xl font-bold mb-[20px]">Products</h2>
       <div className="wrapper flex flex-wrap gap-6 justify-center">
         {data?.length > 0 ? (
           data.map((el, index) => (
             <div
               key={index}
               className="card bg-base-100 w-96 shadow-xl cursor-pointer"
-              onClick={() => handleCardClick(el.id)} // Pass product ID
+              onClick={() => handleCardClick(el.id)}
             >
               <figure>
                 <img
